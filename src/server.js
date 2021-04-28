@@ -4,7 +4,7 @@ const routes = require('./routes');
 const init = async () => {
     const server = Hapi.server({
         port: 5000,
-        host: process.env.NODE_ENV !== 'production' ? 'localhost' : '112.215.242.55',
+        host: process.env.NODE_ENV !== 'production' ? 'localhost' : 'apps-note.herokuapp.com',
         routes: {
             cors: {
                 origin: ['*'],
