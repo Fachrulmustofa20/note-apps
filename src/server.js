@@ -4,7 +4,7 @@ const routes = require('./routes');
 const init = async () => {
     const server = Hapi.server({
         port: 5000,
-        host: process.env.NODE_ENV !== 'production' ? 'localhost' : 'https://note-apps-api.netlify.app/',
+        host: process.env.NODE_ENV !== 'production' ? 'localhost' : 'http://apps-note.herokuapp.com/',
         routes: {
             cors: {
                 origin: ['*'],
